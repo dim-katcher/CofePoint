@@ -20,12 +20,8 @@ module.exports = {
         'ecmaVersion': 'latest',
         'sourceType': 'module'
     },
-    'plugins': [
-        'react',
-        'react-hooks',
-        '@typescript-eslint'
-    ],
-    'rules': {
+    plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+    rules: {
         "max-len": ["error", { "code": 120 }],
         "react/jsx-one-expression-per-line": [1, { "allow": "literal" }],
         'indent': [

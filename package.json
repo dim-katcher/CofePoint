@@ -6,7 +6,9 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint --ext .tsx --ext .ts src/",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
+    "reinstall": "rm -rf node_modules android/build android/app/build/intermediates ios/build ios/Pods ios/Podfile.lock && watchman watch-del-all && npm install && cd ios && bundle install && bundle exec pod install && cd ..",
+    "clean": "rm -rf node_modules android/build android/app/build/intermediates ios/build ios/Pods ios/Podfile.lock && watchman watch-del-all",
     "test": "jest",
     "format": "prettier --check ./src"
   },
