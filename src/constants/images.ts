@@ -1,1 +1,1 @@
-export const splash = require('@/assets/images/splash');
+export const splash = require('@/assets/images/splash/splash.png');

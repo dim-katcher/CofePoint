@@ -1,0 +1,1 @@
+export { ArrowBackSVG } from './ArrowBackSVG';
