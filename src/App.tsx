@@ -1,28 +1,40 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, useColorScheme, View, Text, StyleSheet } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { SafeAreaView, useColorScheme, View, Text, StyleSheet } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+import { WithSplashScreen } from './screens/Splash';
 
-  const backgroundStyle = { backgroundColor: isDarkMode ? Colors.darker : Colors.lighter };
+function App(): JSX.Element {
+  const [isAppReady, setIsAppReady] = useState(false);
+  const isDarkMode = useColorScheme() === 'dark';
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    flex: 1,
+  };
   const viewStyle = { backgroundColor: isDarkMode ? Colors.black : Colors.white };
 
+  useEffect(() => {
+    setIsAppReady(true);
+  }, []);
+
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-        <View style={viewStyle}>
+    <WithSplashScreen isAppReady={isAppReady}>
+      <SafeAreaView style={backgroundStyle}>
+        <View style={[viewStyle, styles.view]}>
           <Text style={styles.title}>{'Initial Screen'}</Text>
         </View>
-      </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </WithSplashScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  title: {
+  view: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
     fontSize: 24,
     fontWeight: '600',
   },
