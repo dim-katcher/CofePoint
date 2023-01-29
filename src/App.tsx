@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { SafeAreaView, useColorScheme, View, Text, StyleSheet } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-import { WithSplashScreen } from './screens/Splash';
+import { WithSplashScreen } from '@/screens/Splash';
 
 function App(): JSX.Element {
   const [isAppReady, setIsAppReady] = useState(false);

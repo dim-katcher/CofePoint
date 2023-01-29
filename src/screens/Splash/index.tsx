@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated } from 'react-native';
 
+import { splash } from '@/constants/images';
+
 import { styles } from './styles';
 
 export function WithSplashScreen({ children, isAppReady }: { isAppReady: boolean; children: React.ReactNode }) {
@@ -65,7 +67,7 @@ export const Splash = ({ isAppReady }: { isAppReady: boolean }) => {
   return (
     <Animated.View collapsable={false} style={[styles.container, { opacity: containerOpacity }]}>
       <Animated.Image
-        source={require('../../assets/images/splash/splash.png')}
+        source={splash}
         fadeDuration={0}
         onLoad={() => {
           setState(FADE_IN_IMAGE);
