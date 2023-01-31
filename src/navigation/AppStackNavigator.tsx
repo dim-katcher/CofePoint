@@ -9,16 +9,12 @@ const AppStack = createNativeStackNavigator();
 
 export const AppStackNavigator: FC = () => {
   const { Navigator, Screen } = AppStack;
-  const isSigned = true;
 
   return (
     <NavigationContainer>
-      <Navigator screenOptions={{ headerShown: false }}>
-        {!isSigned ? (
-          <Screen name="AuthStackNavigator" component={AuthStackNavigator} />
-        ) : (
-          <Screen name="SignedStackNavigator" component={SignedStackNavigator} />
-        )}
+      <Navigator initialRouteName="AuthNavigator" screenOptions={{ headerShown: false }}>
+        <Screen name="AuthNavigator" component={AuthStackNavigator} />
+        <Screen name="SignedNavigator" component={SignedStackNavigator} />
       </Navigator>
     </NavigationContainer>
   );

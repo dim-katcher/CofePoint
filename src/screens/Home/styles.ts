@@ -9,7 +9,7 @@ export const styles = StyleSheet.create<HomeStyles>({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
   title: {
     fontSize: 24,

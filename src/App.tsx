@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
 import { WithSplashScreen } from '@/screens';
 import { AppStackNavigator } from '@/navigation/AppStackNavigator';
+import { persistor, store } from '@/store/store';
 
 function App(): JSX.Element {
   const [isAppReady, setIsAppReady] = useState(false);
@@ -12,7 +15,11 @@ function App(): JSX.Element {
 
   return (
     <WithSplashScreen isAppReady={isAppReady}>
-      <AppStackNavigator />
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <AppStackNavigator />
+        </PersistGate>
+      </Provider>
     </WithSplashScreen>
   );
 }

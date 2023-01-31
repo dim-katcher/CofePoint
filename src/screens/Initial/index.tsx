@@ -1,14 +1,25 @@
-import React, { FC } from 'react';
-import { SafeAreaView, Text, useColorScheme, View, TouchableOpacity } from 'react-native';
+import React, { FC, useEffect } from 'react';
+import { SafeAreaView, useColorScheme, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import { ScreenNavigatorProps } from '@/navigation/types';
 import { Keys } from '@/navigation/keys';
+import { useAppSelector } from '@/hooks/redux';
+import { authSelector } from '@/store/reducers/authReducer';
 
 import { styles } from './styles';
 
 export const Initial: FC<ScreenNavigatorProps<Keys.Initial>> = ({ navigation }) => {
   const isDarkMode = useColorScheme() === 'dark';
+
+  const token = useAppSelector(authSelector.getToken);
+  useEffect(() => {
+    if (token) {
+      navigation.replace(Keys.SignedNavigator);
+    } else {
+      navigation.replace(Keys.Authorization);
+    }
+  }, []);
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -18,11 +29,7 @@ export const Initial: FC<ScreenNavigatorProps<Keys.Initial>> = ({ navigation }) 
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <View style={[viewStyle, styles.container]}>
-        <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('Authorization')}>
-          <Text style={styles.title}>{'Initial Screen'}</Text>
-        </TouchableOpacity>
-      </View>
+      <View style={[viewStyle, styles.container]} />
     </SafeAreaView>
   );
 };

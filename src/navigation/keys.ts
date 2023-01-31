@@ -6,4 +6,8 @@ export enum Keys {
   //Signed
   Home = 'Home',
   Product = 'Product',
+
+  //Root
+  AuthNavigator = 'AuthNavigator',
+  SignedNavigator = 'SignedNavigator',
 }

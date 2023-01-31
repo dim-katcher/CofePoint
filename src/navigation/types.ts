@@ -11,7 +11,12 @@ export type SignedNavigatorParamsList = {
   Product: undefined;
 };
 
-export type RootStackParamList = AuthNavigatorParamsList & SignedNavigatorParamsList;
+export type RootNavigatorParamsList = {
+  AuthNavigator: undefined;
+  SignedNavigator: undefined;
+};
+
+export type RootStackParamList = AuthNavigatorParamsList & SignedNavigatorParamsList & RootNavigatorParamsList;
 
 export type ScreenNavigatorProps<T extends keyof RootStackParamList> = {
   navigation: StackNavigationProp<RootStackParamList, T>;
