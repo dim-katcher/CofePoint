@@ -2,6 +2,7 @@ import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 import { Colors } from '@/constants/colors';
 import { scale } from '@/constants/scale';
+import { Fonts } from '@/constants/fonts';
 
 type NavigatorStyles = {
   header: ViewStyle;
@@ -16,5 +17,6 @@ export const styles = StyleSheet.create<NavigatorStyles>({
     color: Colors.tundora,
     fontSize: scale(22),
     lineHeight: scale(28),
+    fontFamily: Fonts.LOBSTER_REGULAR,
   },
 });
