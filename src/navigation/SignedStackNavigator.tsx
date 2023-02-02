@@ -21,6 +21,7 @@ export const SignedStackNavigator: FC = () => {
         headerStyle: styles.header,
         gestureEnabled: true,
         title: 'CoffeTime',
+        // headerShadowVisible: false,
       }}>
       <Screen
         name={Keys.Home}

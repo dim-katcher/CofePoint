@@ -1,1 +1,14 @@
 export const splash = require('@/assets/images/splash/splash.png');
+export const noCoffe = require('@/assets/images/noCoffe/noCoffe.png');
+export const americano = require('@/assets/images/coffeImages/americano/americano.jpg');
+export const cappuccino = require('@/assets/images/coffeImages/cappuccino/cappuccino.png');
+export const cappuccino2 = require('@/assets/images/coffeImages/cappuccino/cappuccino2.jpg');
+export const cappuccino3 = require('@/assets/images/coffeImages/cappuccino/cappuccino3.jpg');
+export const espresso = require('@/assets/images/coffeImages/espresso/espresso.png');
+export const fredo = require('@/assets/images/coffeImages/fredo/fredo.jpg');
+export const glasse = require('@/assets/images/coffeImages/glasse/glasse.png');
+export const inViennese = require('@/assets/images/coffeImages/inViennese/inViennese.jpg');
+export const latte = require('@/assets/images/coffeImages/latte/latte.png');
+export const latte2 = require('@/assets/images/coffeImages/latte/latte2.jpg');
+export const latte6 = require('@/assets/images/coffeImages/latte/latte6.jpg');
+export const mocha = require('@/assets/images/coffeImages/mocha/mocha.jpg');

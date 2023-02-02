@@ -1,6 +1,5 @@
 import React, { FC, useState } from 'react';
-import { SafeAreaView, Text, TextInput, TouchableOpacity, useColorScheme, View } from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 import { ScreenNavigatorProps } from '@/navigation/types';
 import { Keys } from '@/navigation/keys';
@@ -13,13 +12,6 @@ export const Authorization: FC<ScreenNavigatorProps<Keys.Authorization>> = ({ na
   const dispatch = useAppDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const isDarkMode = useColorScheme() === 'dark';
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-    flex: 1,
-  };
-  const viewStyle = { backgroundColor: isDarkMode ? Colors.black : Colors.white };
 
   const onInputEmail = (event: any) => {
     setEmail(event.nativeEvent.text);
@@ -34,8 +26,8 @@ export const Authorization: FC<ScreenNavigatorProps<Keys.Authorization>> = ({ na
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <View style={[viewStyle, styles.container]}>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
         <Text style={styles.title}>{'Authorization Screen'}</Text>
         <View>
           <Text>Email</Text>

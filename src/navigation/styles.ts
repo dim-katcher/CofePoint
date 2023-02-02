@@ -16,7 +16,6 @@ export const styles = StyleSheet.create<NavigatorStyles>({
   title: {
     color: Colors.tundora,
     fontSize: scale(22),
-    lineHeight: scale(28),
     fontFamily: Fonts.LOBSTER_REGULAR,
   },
 });

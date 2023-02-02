@@ -12,13 +12,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D88E553D7D7468EB3363DCF /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */; };
+		5D09BC9552F746AEB6628862 /* SFUIText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */; };
 		7699B88040F8A987B510C191 /* libPods-CofeTime-CofeTimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CofeTime-CofeTimeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		5D09BC9552F746AEB6628862 /* SFUIText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */; };
-		AFD22AF16C0544FA9DA227C4 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */; };
 		8BD5E225AF4045169CE7E236 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */; };
+		AFD22AF16C0544FA9DA227C4 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */; };
 		C92DFFBFFBE546E38E2EA86F /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */; };
-		2D88E553D7D7468EB3363DCF /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +46,14 @@
 		5709B34CF0A7D63546082F79 /* Pods-CofeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime.release.xcconfig"; path = "Target Support Files/Pods-CofeTime/Pods-CofeTime.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CofeTime-CofeTimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime-CofeTimeTests.debug.xcconfig"; path = "Target Support Files/Pods-CofeTime-CofeTimeTests/Pods-CofeTime-CofeTimeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CofeTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CofeTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Light.otf"; path = "../src/assets/fonts/SFUIText-Light.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CofeTime/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CofeTime-CofeTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime-CofeTimeTests.release.xcconfig"; path = "Target Support Files/Pods-CofeTime-CofeTimeTests/Pods-CofeTime-CofeTimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Regular.otf"; path = "../src/assets/fonts/SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Bold.otf"; path = "../src/assets/fonts/SFUIText-Bold.otf"; sourceTree = "<group>"; };
+		E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Medium.otf"; path = "../src/assets/fonts/SFUIText-Medium.otf"; sourceTree = "<group>"; };
+		EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */ = {isa = PBXFileReference; name = "SFUIText-Bold.otf"; path = "../src/assets/fonts/SFUIText-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */ = {isa = PBXFileReference; name = "SFUIText-Light.otf"; path = "../src/assets/fonts/SFUIText-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */ = {isa = PBXFileReference; name = "SFUIText-Medium.otf"; path = "../src/assets/fonts/SFUIText-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */ = {isa = PBXFileReference; name = "SFUIText-Regular.otf"; path = "../src/assets/fonts/SFUIText-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */ = {isa = PBXFileReference; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		81EFB3EA84DA4B6F8CE9BFAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */,
+				6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */,
+				E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */,
+				BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */,
+				EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,19 +171,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		81EFB3EA84DA4B6F8CE9BFAD /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */,
-				6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */,
-				E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */,
-				BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */,
-				EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
