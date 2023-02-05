@@ -5,5 +5,7 @@ export const Colors = {
   doveGray: '#717171',
   tundora: '#474747',
   white: '#FFFFFF',
+  white5: 'rgba(225,225,225, 0.5)',
+  white28: 'rgba(225,225,225, 0.28)',
   sprout: '#C8D9AF',
 };

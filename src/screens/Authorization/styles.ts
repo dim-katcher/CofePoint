@@ -13,6 +13,11 @@ type AuthorizationStyles = {
   labelSubTitle: TextStyle;
   btnFbWrap: ViewStyle;
   btnFbTitle: TextStyle;
+  textInput: ViewStyle;
+  signInWrap: ViewStyle;
+  signInTitle: TextStyle;
+  registerWrap: ViewStyle;
+  registerTitle: TextStyle;
 };
 
 export const styles = StyleSheet.create<AuthorizationStyles>({
@@ -69,5 +74,46 @@ export const styles = StyleSheet.create<AuthorizationStyles>({
     fontSize: scale(18),
     lineHeight: scale(21),
     marginLeft: scale(26),
+  },
+  textInput: {
+    width: screenWidth - scale(128),
+    marginBottom: scale(16),
+    fontFamily: Fonts.TEXT_REGULAR,
+    color: Colors.white,
+    fontSize: scale(18),
+    lineHeight: scale(21),
+    paddingHorizontal: scale(20),
+    paddingVertical: scale(8),
+    borderBottomColor: Colors.white28,
+    borderBottomWidth: 1,
+  },
+  signInWrap: {
+    height: scale(52),
+    width: screenWidth - scale(76),
+    backgroundColor: Colors.sprout,
+    borderRadius: scale(52 / 2),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  signInTitle: {
+    fontFamily: Fonts.TEXT_REGULAR,
+    color: Colors.white,
+    fontSize: scale(18),
+    lineHeight: scale(21),
+  },
+  registerWrap: {
+    marginTop: scale(16),
+    height: scale(52),
+    width: screenWidth - scale(76),
+    backgroundColor: Colors.sprout,
+    borderRadius: scale(52 / 2),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  registerTitle: {
+    fontFamily: Fonts.TEXT_REGULAR,
+    color: Colors.white,
+    fontSize: scale(18),
+    lineHeight: scale(21),
   },
 });
