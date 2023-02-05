@@ -46,13 +46,15 @@
 		5709B34CF0A7D63546082F79 /* Pods-CofeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime.release.xcconfig"; path = "Target Support Files/Pods-CofeTime/Pods-CofeTime.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CofeTime-CofeTimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime-CofeTimeTests.debug.xcconfig"; path = "Target Support Files/Pods-CofeTime-CofeTimeTests/Pods-CofeTime-CofeTimeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CofeTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CofeTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Light.otf"; path = "../src/assets/fonts/SFUIText-Light.otf"; sourceTree = "<group>"; };
+		6471BAAA6DC348CFB32BD471 /* SFUIText-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Light.otf"; path = "../src/assets/fonts/SFUIText-Light.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CofeTime/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CofeTime-CofeTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CofeTime-CofeTimeTests.release.xcconfig"; path = "Target Support Files/Pods-CofeTime-CofeTimeTests/Pods-CofeTime-CofeTimeTests.release.xcconfig"; sourceTree = "<group>"; };
-		BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Regular.otf"; path = "../src/assets/fonts/SFUIText-Regular.otf"; sourceTree = "<group>"; };
-		DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Bold.otf"; path = "../src/assets/fonts/SFUIText-Bold.otf"; sourceTree = "<group>"; };
-		E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Medium.otf"; path = "../src/assets/fonts/SFUIText-Medium.otf"; sourceTree = "<group>"; };
-		EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		8F7C40D7298FEF09007F1E43 /* CofeTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = CofeTime.entitlements; path = CofeTime/CofeTime.entitlements; sourceTree = "<group>"; };
+		8F7C40D8298FFAC0007F1E43 /* CofeTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CofeTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDD9E2542EFC4402B9423D3C /* SFUIText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Regular.otf"; path = "../src/assets/fonts/SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		DC3547B9E8274F93A7431D2C /* SFUIText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Bold.otf"; path = "../src/assets/fonts/SFUIText-Bold.otf"; sourceTree = "<group>"; };
+		E0B1C71C8ED343B89A5CFF1B /* SFUIText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Medium.otf"; path = "../src/assets/fonts/SFUIText-Medium.otf"; sourceTree = "<group>"; };
+		EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,12 +98,14 @@
 		13B07FAE1A68108700A75B9A /* CofeTime */ = {
 			isa = PBXGroup;
 			children = (
+				8F7C40D7298FEF09007F1E43 /* CofeTime.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				8F7C40D8298FFAC0007F1E43 /* CofeTime-Bridging-Header.h */,
 			);
 			name = CofeTime;
 			sourceTree = "<group>";
@@ -126,7 +130,6 @@
 				EC9D27767CF840DCB8F8C55E /* Lobster-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -231,7 +234,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -514,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CofeTime/CofeTime.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CofeTime/Info.plist;
@@ -527,8 +531,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.CofeTime;
 				PRODUCT_NAME = CofeTime;
+				SWIFT_OBJC_BRIDGING_HEADER = "CofeTime-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -541,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CofeTime/CofeTime.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = CofeTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,8 +559,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.CofeTime;
 				PRODUCT_NAME = CofeTime;
+				SWIFT_OBJC_BRIDGING_HEADER = "CofeTime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

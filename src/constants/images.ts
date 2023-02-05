@@ -12,3 +12,4 @@ export const latte = require('@/assets/images/coffeImages/latte/latte.png');
 export const latte2 = require('@/assets/images/coffeImages/latte/latte2.jpg');
 export const latte6 = require('@/assets/images/coffeImages/latte/latte6.jpg');
 export const mocha = require('@/assets/images/coffeImages/mocha/mocha.jpg');
+export const background = require('@/assets/images/background/background.png');

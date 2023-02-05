@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <FBSDKCoreKit/FBSDKCoreKit-swift.h>
 
 @implementation AppDelegate
 
@@ -10,8 +11,18 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+  [[FBSDKApplicationDelegate sharedInstance] application:application
+                         didFinishLaunchingWithOptions:launchOptions];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
+- ( BOOL )application:(UIApplication *)app
+            openURL:( NSURL *)url
+            options:( NSDictionary <UIApplicationOpenURLOptionsKey, id > *)options
+{ return [[FBSDKApplicationDelegate sharedInstance ]application:app
+                                                       openURL: url
+                                                       options: options];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
