@@ -1,5 +1,6 @@
 import React, { FC, useEffect } from 'react';
 import { SafeAreaView, Text, View, Image, FlatList } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import { ScreenNavigatorProps } from '@/navigation/types';
 import { Keys } from '@/navigation/keys';
@@ -42,6 +43,7 @@ const defaultImages = [
 ];
 
 export const Home: FC<ScreenNavigatorProps<Keys.Home>> = ({ navigation }) => {
+  const { t } = useTranslation();
   const token = useAppSelector(authSelector.getToken);
   const dispatch = useAppDispatch();
   const products = useAppSelector(productSelector.getProducts);
@@ -55,9 +57,7 @@ export const Home: FC<ScreenNavigatorProps<Keys.Home>> = ({ navigation }) => {
     return (
       <View style={styles.emptyContentContainer}>
         <Image source={noCoffe} style={styles.emptyContentImage} />
-        <Text style={styles.emptyContentTitle}>
-          {'Здесь нет ни одной чашки кофе\nПопробуйте вернуться к нам позже'}
-        </Text>
+        <Text style={styles.emptyContentTitle}>{t('Home.Is-No-Coffee')}</Text>
       </View>
     );
   };
@@ -70,7 +70,7 @@ export const Home: FC<ScreenNavigatorProps<Keys.Home>> = ({ navigation }) => {
           {item.name}
         </Text>
         <Text style={styles.productDescription} numberOfLines={1}>
-          {'кофейный напиток'}
+          {t('Home.Coffee-Drink')}
         </Text>
         <Image source={imageSource} style={styles.productImage} />
         <View style={styles.productBottomRow}>

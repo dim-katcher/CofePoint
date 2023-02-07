@@ -1,0 +1,18 @@
+{
+  "MainLabel": "CoffeTime",
+  "MainLabel.Sub-Title": "территория кофе",
+
+  "Authorization.Error-Title": "Ошибка",
+  "Authorization.Login-Cancelled": "В случае возникновения ошибки, пожалуйста, попробуйте еще раз",
+  "Authorization.Connection-Error-Title": "Ошибка соединения",
+  "Authorization.Connection-Error-Description": "Пожалуйста, проверьте соединение с интернетом",
+  "Authorization.Button-Enter": "Войти",
+  "Authorization.Button-Register": "Зарегистрироваться",
+  "Authorization.Button-Next": "Далее",
+  "Authorization.Button-Login-FB": "Войти через Facebook",
+  "Authorization.Placeholder-Email": "Email",
+  "Authorization.Placeholder-Password": "Пароль",
+
+  "Home.Is-No-Coffee": "Здесь нет ни одной чашки кофе\nПопробуйте вернуться к нам позже",
+  "Home.Coffee-Drink": "кофейный напиток"
+}

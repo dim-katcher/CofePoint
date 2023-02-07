@@ -1,0 +1,18 @@
+{
+  "MainLabel": "CoffeTime",
+  "MainLabel.Sub-Title": "coffee territory",
+
+  "Authorization.Error-Title": "Error",
+  "Authorization.Login-Cancelled": "If you have an error logging in, please try again",
+  "Authorization.Connection-Error-Title": "Connection error",
+  "Authorization.Connection-Error-Description": "Please check Internet connection",
+  "Authorization.Button-Enter": "Enter",
+  "Authorization.Button-Register": "Register",
+  "Authorization.Button-Next": "Next",
+  "Authorization.Button-Login-FB": "Login with Facebook",
+  "Authorization.Placeholder-Email": "Email",
+  "Authorization.Placeholder-Password": "Password",
+
+  "Home.Is-No-Coffee": "There's not a single cup of coffee here\nTry to come back to us later",
+  "Home.Coffee-Drink": "coffee drink"
+}

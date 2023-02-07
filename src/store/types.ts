@@ -15,3 +15,9 @@ export interface AuthRequest {
   password: string;
   navigation: StackNavigationProp<RootStackParamList>;
 }
+
+export enum LanguageType {
+  En = 'en',
+  Ru = 'ru',
+  De = 'de',
+}
