@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { SafeAreaView, Text, View, Image, FlatList } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
@@ -7,40 +7,11 @@ import { Keys } from '@/navigation/keys';
 import { useAppDispatch, useAppSelector } from '@/hooks/redux';
 import { authSelector } from '@/store/reducers/authReducer';
 import { postProduct, productSelector } from '@/store/reducers/productReducer';
-import {
-  americano,
-  cappuccino,
-  cappuccino2,
-  cappuccino3,
-  espresso,
-  fredo,
-  glasse,
-  inViennese,
-  latte,
-  latte2,
-  latte6,
-  mocha,
-  noCoffe,
-} from '@/constants/images';
+import { defaultCoffee, noCoffe } from '@/constants/images';
 import { IProduct } from '@/store/types';
 
 import { styles } from './styles';
 import { LikeFullSVG, LikeSVG } from '@/assets/svg';
-
-const defaultImages = [
-  americano,
-  cappuccino,
-  cappuccino2,
-  cappuccino3,
-  espresso,
-  fredo,
-  glasse,
-  inViennese,
-  latte,
-  latte2,
-  latte6,
-  mocha,
-];
 
 export const Home: FC<ScreenNavigatorProps<Keys.Home>> = ({ navigation }) => {
   const { t } = useTranslation();
@@ -62,24 +33,21 @@ export const Home: FC<ScreenNavigatorProps<Keys.Home>> = ({ navigation }) => {
     );
   };
 
-  const renderProduct = (item: IProduct, index: number) => {
-    const imageSource = defaultImages[index] || defaultImages[0];
-    return (
-      <View style={styles.productWrap}>
-        <Text style={styles.productName} numberOfLines={1}>
-          {item.name}
-        </Text>
-        <Text style={styles.productDescription} numberOfLines={1}>
-          {t('Home.Coffee-Drink')}
-        </Text>
-        <Image source={imageSource} style={styles.productImage} />
-        <View style={styles.productBottomRow}>
-          <Text style={styles.productPrice}>{`${item.price} ₽`}</Text>
-          {item.favorite ? <LikeSVG /> : <LikeFullSVG />}
-        </View>
+  const renderProduct = (item: IProduct, index: number) => (
+    <View style={styles.productWrap}>
+      <Text style={styles.productName} numberOfLines={1}>
+        {item.name}
+      </Text>
+      <Text style={styles.productDescription} numberOfLines={1}>
+        {t('Home.Coffee-Drink')}
+      </Text>
+      <Image source={{ uri: item.imagesPath }} style={styles.productImage} defaultSource={defaultCoffee} />
+      <View style={styles.productBottomRow}>
+        <Text style={styles.productPrice}>{`${item.price} ₽`}</Text>
+        {item.favorite ? <LikeSVG /> : <LikeFullSVG />}
       </View>
-    );
-  };
+    </View>
+  );
 
   return (
     <SafeAreaView style={styles.container}>
